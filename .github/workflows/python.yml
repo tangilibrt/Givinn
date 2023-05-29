@@ -29,6 +29,9 @@ jobs:
       run: |
         sudo apt-get install -y language-pack-fr
         sudo update-locale LANG=fr_FR.UTF-8 LANGUAGE=fr_FR
+    - name: Set LC_TIME variable
+      run: |
+        echo "LC_TIME=fr_FR.UTF-8" | sudo tee -a /etc/default/locale
     - name: Run Python script
       run: python unbuild/src/Python/venv/Scripts/Instagram.py
     - name: Change working directory
