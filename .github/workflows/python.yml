@@ -27,13 +27,13 @@ jobs:
         ruff --format=github --target-version=py37 .
 #     - name: Run Python script
 #       run: python src/Python/venv/Scripts/Instagram.py
+    - name: Remove existing directories
+      run: |
+       rm -rf assets css img js
     - name: Rebuild Vue.js project
       run: |
         npm install
         npm run build
-    - name: Remove existing directories
-      run: |
-       rm -rf assets css img js
     - name: Move files to root of repository
       run: mv dist/* ..
     - name: Commit and push changes
