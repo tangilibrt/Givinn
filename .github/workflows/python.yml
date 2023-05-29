@@ -36,4 +36,11 @@ jobs:
        rm -rf assets css img js
     - name: Move files to root of repository
       run: mv dist/* ..
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'Your Name'
+        git config --global user.email 'your-email@example.com'
+        git add .
+        git commit -m 'Update build files'
+        git push
 
