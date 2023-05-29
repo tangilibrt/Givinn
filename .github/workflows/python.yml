@@ -26,9 +26,7 @@ jobs:
         # default set of ruff rules with GitHub Annotations
         ruff --format=github --target-version=py37 .
 #     - name: Run Python script
-#       run: python unbuild/src/Python/venv/Scripts/Instagram.py
-    - name: Change working directory
-      run: cd unbuild
+#       run: python src/Python/venv/Scripts/Instagram.py
     - name: Rebuild Vue.js project
       run: |
         npm install
