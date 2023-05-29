@@ -5,7 +5,7 @@ import re
 import locale
 import os
 
-locale.setlocale(locale.LC_TIME, 'fr_FR')
+# locale.setlocale(locale.LC_TIME, 'fr_FR')
 L = instaloader.Instaloader(dirname_pattern='pfps')
 L.load_session_from_file('tangilibrt')
 
