@@ -7,7 +7,7 @@ import os
 
 # locale.setlocale(locale.LC_TIME, 'fr_FR')
 L = instaloader.Instaloader(dirname_pattern='pfps')
-L.load_session_from_file('tangilibrt')
+L.login('tangilibrt', 'wolacacasselescouilles')
 
 
 def get_profile_details(username):
