@@ -25,13 +25,6 @@ jobs:
         ruff --format=github --select=E9,F63,F7,F82 --target-version=py37 .
         # default set of ruff rules with GitHub Annotations
         ruff --format=github --target-version=py37 .
-    - name: Install fr_FR locale
-      run: |
-        sudo apt-get install -y language-pack-fr
-        sudo update-locale LANG=fr_FR.UTF-8 LANGUAGE=fr_FR
-    - name: Set LC_TIME variable
-      run: |
-        echo "LC_TIME=fr_FR.UTF-8" | sudo tee -a /etc/default/locale
     - name: Run Python script
       run: python unbuild/src/Python/venv/Scripts/Instagram.py
     - name: Change working directory
