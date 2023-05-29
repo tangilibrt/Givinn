@@ -28,13 +28,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Run Python script
-      run: python unbuild/src/Python/venv/Scripts/Instagram.py
-    - name: Change working directory
-      run: cd unbuild
-    - name: Rebuild Vue.js project
-      run: |
-        npm install
-        npm run build
-    - name: Move files to root of repository
-      run: mv dist/* .
+
