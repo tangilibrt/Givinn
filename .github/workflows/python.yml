@@ -25,6 +25,10 @@ jobs:
         ruff --format=github --select=E9,F63,F7,F82 --target-version=py37 .
         # default set of ruff rules with GitHub Annotations
         ruff --format=github --target-version=py37 .
+    - name: Copy cookies file to Instaloader session directory
+      run: |
+        mkdir -p ~/.instaloader-tangi/session-tangi
+        cp cookies.json ~/.instaloader-tangi/session-tangi/
     - name: Run Python script
       run: python src/Python/venv/Scripts/Instagram.py
     - name: Remove existing directories
@@ -32,10 +36,6 @@ jobs:
        rm -rf assets css img js
     - name: List directory contents
       run: ls -al
-    - name: Copy cookies file to Instaloader session directory
-      run: |
-        mkdir -p ~/.instaloader-tangi/session-tangi
-        cp cookies.json ~/.instaloader-tangi/session-tangi/
     - name: Rebuild Vue.js project
       run: |
         npm install
