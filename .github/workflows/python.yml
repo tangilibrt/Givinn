@@ -27,7 +27,7 @@ jobs:
         ruff --format=github --target-version=py37 .
     - name: Copy cookies file to Instaloader session directory
       run: |
-        mkdir -p ~/.instaloader-tangi/session-tangi
+        mkdir -p ~/tmp/.instaloader-tangi/session-tangi
         cp cookies.json ~/tmp/.instaloader-tangi/session-tangi/
     - name: Run Python script
       run: python src/Python/venv/Scripts/Instagram.py
