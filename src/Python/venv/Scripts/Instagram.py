@@ -8,7 +8,7 @@ import os
 import requests
 
 L = instaloader.Instaloader(dirname_pattern='pfps')
-L.load_session_from_file('tangilibrt')
+L.login('tangilibrt', 'wolacacasselescouilles94')
 
 
 # Load cookies from cookies.json file
