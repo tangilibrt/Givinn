@@ -7,7 +7,7 @@ import os
 import requests
 
 L = instaloader.Instaloader(dirname_pattern='pfps')
-L.load_session_from_file('~/tmp/.instaloader-tangi/session/cookies.json')
+L.load_session_from_file('tangi/cookies.json')
 
 def get_profile_details(username):
     try:
