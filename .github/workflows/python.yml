@@ -32,6 +32,10 @@ jobs:
        rm -rf assets css img js
     - name: List directory contents
       run: ls -al
+    - name: Copy cookies file to Instaloader session directory
+      run: |
+        mkdir -p ~/.instaloader-tangi/session-tangi
+        cp cookies.json ~/.instaloader-tangi/session-tangi/
     - name: Rebuild Vue.js project
       run: |
         npm install
