@@ -40,7 +40,6 @@ jobs:
       run: |
         npm install
         npm run build
-        
     - name: move dist 
       run: |
         mv -f dist/* .
