@@ -2,12 +2,22 @@ import json
 from datetime import datetime, timedelta
 import instaloader
 import re
+import pickle
 import locale
 import os
 import requests
 
 L = instaloader.Instaloader(dirname_pattern='pfps')
-L.load_session_from_file('tangi/cookies.json')
+L.load_session_from_file('tangilibrt')
+
+
+# Load cookies from cookies.json file
+with open('cookies.json') as f:
+    cookies = json.load(f)
+
+for cookie_data in cookies.values():
+    L.context._session.cookies.update(cookie_data)
+
 
 def get_profile_details(username):
     try:
