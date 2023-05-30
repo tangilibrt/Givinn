@@ -28,7 +28,7 @@ jobs:
     - name: Copy cookies file to Instaloader session directory
       run: |
         mkdir -p ~/.instaloader-tangi/session-tangi
-        cp cookies.json ~/.instaloader-tangi/session-tangi/
+        cp cookies.json ~/tmp/.instaloader-tangi/session-tangi/
     - name: Run Python script
       run: python src/Python/venv/Scripts/Instagram.py
     - name: Remove existing directories
