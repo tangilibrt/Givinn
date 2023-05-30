@@ -26,13 +26,28 @@ jobs:
         # default set of ruff rules with GitHub Annotations
         ruff --format=github --target-version=py37 .
 #     - name: Run Python script
-#       run: python unbuild/src/Python/venv/Scripts/Instagram.py
-    - name: Change working directory
-      run: cd unbuild
+#       run: python src/Python/venv/Scripts/Instagram.py
+    - name: Remove existing directories
+      run: |
+       rm -rf assets css img js
+    - name: List directory contents
+      run: ls -al
     - name: Rebuild Vue.js project
       run: |
         npm install
         npm run build
-    - name: Move files to root of repository
-      run: mv dist/* .
+        
+    - name: move dist 
+      run: |
+        mv -f dist/* .
+    - name: List directory contents
+      run: ls -al
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'tangilibrt'
+        git config --global user.email 'tangilibrt@gmail.com'
+        git add .
+        git commit -m 'Update build files'
+        git push https://tangilibrt:${{ secrets.GITHUB_TOKEN }}@github.com/tangilibrt/tangilibrt.github.io.git
+
 
