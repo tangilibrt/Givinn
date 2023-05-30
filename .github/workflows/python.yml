@@ -25,8 +25,8 @@ jobs:
         ruff --format=github --select=E9,F63,F7,F82 --target-version=py37 .
         # default set of ruff rules with GitHub Annotations
         ruff --format=github --target-version=py37 .
-#     - name: Run Python script
-#       run: python src/Python/venv/Scripts/Instagram.py
+    - name: Run Python script
+      run: python src/Python/venv/Scripts/Instagram.py
     - name: Remove existing directories
       run: |
        rm -rf assets css img js
