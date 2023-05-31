@@ -171,4 +171,43 @@ nav ul li a:hover {
   }
 }
 
+@media screen and (max-width: 1245px) {
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .fixed-logo {
+    left: 5%;
+  }
+
+  .cross {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .banner-toggled{
+    max-width: 80%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 780px){
+  .banner-toggled{
+    max-width: 100%;
+    right: 0;
+    flex-flow: column;
+    height: 50vh;
+    align-items: center;
+  }
+  .header-toggled{
+    height: 50vh;
+  }
+  header{
+    height: 50vh;
+  }
+
+}
+
 </style>
