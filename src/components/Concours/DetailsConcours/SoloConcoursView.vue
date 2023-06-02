@@ -410,6 +410,7 @@ h1 {
 @media screen and (max-width: 400px) {
   .twelve {
     left: 45%;
+
   }
 }
 
