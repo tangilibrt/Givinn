@@ -217,4 +217,46 @@ h1 {
   font-size: 50px;
 }
 
+@media screen and (max-width: 1450px){
+    .sort {
+      position: absolute;
+      flex-flow: row;
+      left: 25%;
+      transform: translate(50%, -50%);
+      border-left: none;
+      top: 300px;
+      :nth-child(n+1) {
+        border-top: none;
+        border-left: 1px solid lightgrey;
+      }
+    }
+    .cursorLine {
+      opacity: 0;
+    }
+    .line {
+      top: 380px;
+    }
+    .cardContainer {
+      top: 300px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    h1 {
+      font-size: 40px;
+    }
+    .search {
+      width: 80%;
+    }
+    .sort {
+      max-width: 80%;
+      left: 0%;
+      li {
+        button {
+          font-size: .75rem;
+        }
+      }
+    }
+}
+
 </style>
