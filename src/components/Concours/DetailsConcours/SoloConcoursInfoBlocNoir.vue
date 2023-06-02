@@ -33,7 +33,7 @@ export default {
 <style scoped>
 
 .containerInfos {
-  width: 400px;
+  min-width: 400px;
   background-color: #000;
   background-image: none;
   border: 1px solid rgb(37,37,37);
@@ -81,6 +81,14 @@ export default {
 @media (min-width: 768px) {
   .containerInfos {
     padding: 12px 50px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .containerInfos {
+    padding: 12px 60px;
+    min-width: 300px;
+    max-width: 400px;
   }
 }
 </style>

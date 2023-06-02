@@ -134,7 +134,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 
 .containerDetail {
@@ -361,4 +361,61 @@ h1 {
   }
 }
 
+@media screen and (max-width: 860px) {
+  .twelve {
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .containerDetail {
+    flex-direction: column;
+    overflow-y: visible;
+    height: 100%;
+
+  }
+  .description {
+    width: 80%;
+    margin: auto;
+  }
+  .sub {
+    flex-direction: column;
+    width: 100%;
+    :nth-child(2) {
+      margin: 20px 0;
+    }
+  }
+  .detail {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .twelve {
+    top: 5%;
+    text-wrap: normal;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .twelve {
+    font-size: 20px;
+    left: 40%;
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .twelve {
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .twelve {
+    left: 50%;
+  }
+}
 </style>

@@ -80,9 +80,17 @@ export default {
   transform: translate(2px, 2px);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .containerInfos {
     padding: 12px 50px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .containerInfos {
+    padding: 12px 60px;
+    min-width: 300px;
+    max-width: 400px;
   }
 }
 </style>
