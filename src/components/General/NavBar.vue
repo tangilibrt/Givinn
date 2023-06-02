@@ -38,6 +38,7 @@ export default {
       toggled.value = !toggled.value;
       if (toggled.value) {
         document.querySelector('header').style.height = '50vh';
+
       } else {
         document.querySelector('header').style.height = '75px';
       }
