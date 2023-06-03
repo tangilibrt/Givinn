@@ -133,6 +133,7 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     transition: font-size .5s ease-in-out, top .5s ease-in-out;
+
   }
 
   .text {
