@@ -14,7 +14,7 @@
               <router-link class="textBanner" to="/concours">Concours</router-link>
             </li>
             <li>
-              <router-link class="textBanner" to="/autre-page">Autre Page</router-link>
+              <router-link class="textBanner" to="/QuiSommesNous">Qui Sommes Nous ?</router-link>
             </li>
           </div>
           <div :class="toggled ? 'toggled' : ''" @click="toggledBar" class="cross">
