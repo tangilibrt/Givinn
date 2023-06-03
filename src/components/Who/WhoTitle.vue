@@ -57,11 +57,24 @@ export default {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
   .containerInfos {
-    padding: 12px 60px;
-    min-width: 300px;
-    max-width: 400px;
+    padding: 12px 50px;
+    min-width: 200px;
+    max-width: 300px;
+    font-size: 20px;
   }
+}
+
+@media screen and (max-width: 410px) {
+  .containerInfos {
+    padding: 12px 30px;
+    min-width: 180px;
+    max-width: 200px;
+    font-size: 15px;
+
+  }
+
+
 }
 </style>
