@@ -14,7 +14,7 @@
               <router-link class="textBanner" to="/concours">Concours</router-link>
             </li>
             <li>
-              <router-link class="textBanner" to="/autre-page">Autre Page</router-link>
+              <router-link class="textBanner" to="/QuiSommesNous">Qui Sommes Nous ?</router-link>
             </li>
           </div>
           <div :class="toggled ? 'toggled' : ''" @click="toggledBar" class="cross">
@@ -36,6 +36,12 @@ export default {
 
     const toggledBar = () => {
       toggled.value = !toggled.value;
+      if (toggled.value) {
+        document.querySelector('header').style.height = '50vh';
+
+      } else {
+        document.querySelector('header').style.height = '75px';
+      }
     };
 
     return {
@@ -67,8 +73,8 @@ export default {
 header {
   width: 100%;
   position: fixed;
-  z-index: 10000;
   overflow: hidden;
+  z-index: 10;
   padding: 0;
   height: 75px;
 }
@@ -132,13 +138,13 @@ nav ul li a:hover {
   top: 30px;
   right: 75px;
   cursor: pointer;
-  height: 1.41vh; // 12px / 850px * 100vh
+  height: 50px;
   &.toggled {
     transform: translateY(0.59vh); // 5px / 850px * 100vh
   }
 
   div {
-    height: 0.2vw; // 4px  / 850px * 100vh
+    height: 4px; //0.3vw / 4px  / 850px * 100vh
     width: 5vh; // 43px / 1500px * 100vw
     background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     transition: all 0.3s;
@@ -150,7 +156,7 @@ nav ul li a:hover {
   :first-child {
     transform: rotate(0);
     &.toggled {
-      transform: rotate(45deg) translateX(0.25vw) translateY(0.2vh); // 3px / 1500px * 100vw, 3px / 850px * 100vh
+      transform: rotate(45deg) translateX(5px) translateY(0.2vh); // 3px / 1500px * 100vw, 3px / 850px * 100vh
     }
   }
 
@@ -170,5 +176,59 @@ nav ul li a:hover {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1245px) {
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .fixed-logo {
+    left: 5%;
+  }
+
+  .cross {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .banner-toggled{
+    max-width: 80%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 780px){
+  .banner-toggled{
+    max-width: 100%;
+    right: 0;
+    flex-flow: column;
+    height: 50vh;
+    align-items: center;
+  }
+  .header-toggled{
+    height: 50vh;
+  }
+  header{
+    height: 50vh;
+  }
+
+}
+
+@media screen and (max-width: 450px){ /* mobile */
+  .cross {
+    top: 30px;
+    right: 20px;
+    /* TODO: increase the height of the divs of the cross */
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+}
+
+
 
 </style>
