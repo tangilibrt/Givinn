@@ -15,11 +15,13 @@
         nous avons mis en place un système de notation des concours, plus l'indice de confiance est élevé, plus le concours est fiable
         comme par exemple:
       </p>
-      <li>si le compte est certifié</li>
-      <li>si le concours est organisé par une marque</li>
-      <li>si le compte possède un grand nombre d'abonnés</li>
-      <li>ce qui permet de participer au concours</li>
-      <li>la date de début et de fin du concours</li>
+      <ul>
+        <li>si le compte est certifié</li>
+        <li>si le concours est organisé par une marque</li>
+        <li>si le compte possède un grand nombre d'abonnés</li>
+        <li>ce qui permet de participer au concours</li>
+        <li>la date de début et de fin du concours</li>
+      </ul>
     </section>
     <section>
       <who-title infos="les meilleurs concours"></who-title>
