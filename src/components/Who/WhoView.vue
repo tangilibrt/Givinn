@@ -1,6 +1,7 @@
 <template>
   <div id = "container">
     <h1>Qui sommes-nous ?</h1>
+    <WhoTitle infos="L'EQUIPE GIV'INN" />
     <div id="profileContainer" >
       <div class="profile profile1" @mouseover="expand(1)" @mouseout="normal">
         <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
@@ -48,12 +49,37 @@
         </div>
       </div>
     </div>
+    <WhoTitle infos="POURQUOI GIV'INN ?" />
+    <div id="containerText">
+      <h3 style="color: black">
+        Parce qu'on a tous quelque chose de Remy de Ratatouille.
+        <br>
+        <br>
+        Oui oui, nous avons tous un petit côté Rat à la recherche des petites économies de tous les jours, à essayer d'obtenir des choses gratuitement...
+        <br>
+        <br>
+        Eh bien c'est exactement ce que Giv'inn va vous permettre de faire !
+        <br>
+        <br>
+        Notre Auberge est équipée de notre algorithme d'IA Quantique (oui oui, rien que ça), vous allez pouvoir retrouver tous les concours disponible sur Instagram, les trier selon vos centre d'intérets, tout en restant protégé des arnaques puisse que notre programme de Machine Learning à propulsion nucléaire va vous permettre de déterminer si le concours est fiable ou non.
+        <br>
+        <br>
+        Alors, armez vous de vos meilleur likes, story et commentaires, asseyez vous confortablement et attendez que Giv'inn vous apporte vos cadeaux de Noël (ou pas, des fois il faut juste se faire plaisir roooh) comme sur un plateau.<br>
+      </h3>
+      <h2>
+        <br>
+        <br>
+        On dit merci qui ?... Jacq- Giv'Inn !</h2>
+    </div>
   </div>
 </template>
 
 <script>
+import WhoTitle from "@/components/Who/WhoTitle.vue";
+
 export default {
   name: "WhoView",
+  components: {WhoTitle},
   methods: {
     expand(column) {
       const profiles = document.getElementsByClassName('profile');
@@ -83,7 +109,7 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
+  height: 200vh;
   flex-direction: column;
 }
 
@@ -97,7 +123,7 @@ h1 {
   border: none;
   overflow: hidden;
   width: 80%;
-  height: 50%;
+  height: 50vh;
   background-color: transparent;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -162,6 +188,27 @@ h1 {
 
 .shrink {
   width: 15%;
+}
+
+#containerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50vh;
+  background-color: transparent;
+  margin-top: 5vh;
+  flex-direction: column;
+  h3 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+  h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+  }
 }
 
 </style>
