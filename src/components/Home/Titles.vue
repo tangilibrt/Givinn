@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "WhoTitle",
+  name: "HomeTitle",
   props: {
     infos: {
       type: String,
@@ -27,7 +27,8 @@ export default {
 <style scoped>
 
 .containerInfos {
-  min-width: 400px;
+  width: 800px;
+  max-height: 400px;
   background-color: #000;
   background-image: none;
   border: 1px solid rgb(37,37,37);
@@ -37,9 +38,8 @@ export default {
   color: #fff;
   display: inline-block;
   font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
-  font-size: 20px;
+  font-size: 100px;
   font-weight: 400;
-  line-height: 20px;
   overflow: visible;
   padding: 12px 40px;
   text-align: center;

@@ -1,31 +1,28 @@
 <template>
   <div class = container>
-    <h1>Accueil</h1>
-
-
     <section class="introduction">
-      <who-title infos="Giv'inn"></who-title>
+      <Title infos="Giv'inn"></Title>
       <p>
-        notre but, vous faire découvrir les concours les plus intéressants et les plus fiables disponible sur instagram
+        Notre but, vous faire découvrir les concours les plus intéressants et les plus fiables disponible sur Instagram
       </p>
     </section>
     <section class="giveAwayList">
       <who-title infos="comment ça marche ?"></who-title>
       <p>
-        nous avons mis en place un système de notation des concours, plus l'indice de confiance est élevé, plus le concours est fiable
+        Nous avons mis en place un système de notation des concours, plus l'indice de confiance est élevé, plus le concours est fiable
         comme par exemple:
       </p>
       <ul>
-        <li>si le compte est certifié</li>
-        <li>si le concours est organisé par une marque</li>
-        <li>si le compte possède un grand nombre d'abonnés</li>
-        <li>ce qui permet de participer au concours</li>
-        <li>la date de début et de fin du concours</li>
+        <li>Si le compte est certifié</li>
+        <li>Si le concours est organisé par une marque</li>
+        <li>Si le compte possède un grand nombre d'abonnés</li>
+        <li>Ce qui permet de participer au concours</li>
+        <li>La date de début et de fin du concours</li>
       </ul>
     </section>
     <section>
-      <who-title infos="les meilleurs concours"></who-title>
-      <P>voici ci-dessous les 3 concours jugés les plus fiables</P>
+      <WhoTitle infos="les meilleurs concours"></WhoTitle>
+      <P>Voici ci-dessous les 3 concours jugés les plus fiables</P>
       <div class="cardContainer">
         <div v-for="concours in descConcours" v-bind:key="concours.id">
           <ConcoursCard :concours=concours />
@@ -37,13 +34,14 @@
 </template>
 
 <script>
-import WhoTitle from "@/components/Home/Titles.vue";
+import Title from "@/components/Home/Titles.vue";
+import WhoTitle from "@/components/Who/WhoTitle.vue";
 import ConcoursCard from "@/components/Concours/ConcoursCard.vue";
 import informations from "/src/Python/venv/Scripts/db/concours.json";
 
 export default {
   name: "HomeView",
-  components: {ConcoursCard, WhoTitle},
+  components: {ConcoursCard, Title, WhoTitle},
   data() {
     return {
       informations,
@@ -72,14 +70,16 @@ export default {
       section {
         color: #17141d;
       }
-
-      li{
-        text-align: justify;
-        margin: 10px;
-        font-size: medium;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+      ul {
+        li{
+          list-style-type: none;
+          text-align: justify;
+          margin: 10px;
+          font-size: medium;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
 
       p {
