@@ -48,7 +48,7 @@
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Théo</h2>
-            <a class="text">Je suis idriss aberkane
+            <a class="text">Je suis une licorne
             </a>
           </div>
         </div>
