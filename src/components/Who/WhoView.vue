@@ -8,7 +8,7 @@
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Thomas</h2>
-            <a class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eget nisl. Donec euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eget nisl.</a>
+            <a class="text">PHD en histoire de FNAF, ou comment un développeur construit son histoire en contredisant les autres</a>
           </div>
         </div>
       </div>
@@ -17,7 +17,7 @@
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Eden</h2>
-            <a class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eget nisl. Donec euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eget nisl.</a>
+            <a class="text">Quota presque féminin</a>
           </div>
         </div>
       </div>
@@ -26,7 +26,11 @@
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Tanguy</h2>
-            <a class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eget nisl. Donec euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eget nisl.</a>
+            <a class="text">While Alive :
+              <br>Moto
+              <br>Code
+              <br>Dodo
+            </a>
           </div>
         </div>
       </div>
@@ -35,7 +39,7 @@
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Ame</h2>
-            <a class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eget nisl. Donec euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eget nisl.</a>
+            <a class="text">Manager de la page Instagram, on a pas d'instagram</a>
           </div>
         </div>
       </div>
@@ -44,7 +48,8 @@
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Théo</h2>
-            <a class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eget nisl. Donec euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eget nisl.</a>
+            <a class="text">Je suis idriss aberkane
+            </a>
           </div>
         </div>
       </div>
