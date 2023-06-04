@@ -4,7 +4,7 @@
     <WhoTitle infos="L'EQUIPE GIV'INN" />
     <div id="profileContainer" >
       <div class="profile profile1" @mouseover="expand(1)" @mouseout="normal">
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+        <img src="/assets/thomas_chibi.png" alt="Avatar" class="avatar">
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Thomas</h2>
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="profile profile2" @mouseover="expand(2)" @mouseout="normal" >
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+        <img src="/assets/eden_chibi.png" alt="Avatar" class="avatar">
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Eden</h2>
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="profile profile3" @mouseover="expand(3)" @mouseout="normal" >
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+        <img src="/assets/tanguy_chibi.png" alt="Avatar" class="avatar">
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Tanguy</h2>
@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="profile profile4" @mouseover="expand(4)" @mouseout="normal" >
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+        <img src="/assets/ame_chibi.png" alt="Avatar" class="avatar">
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Ame</h2>
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="profile profile5" @mouseover="expand(5)" @mouseout="normal">
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+        <img src="/assets/theo_chibi.png" alt="Avatar" class="avatar">
         <div class="containerInfos">
           <div class="content">
             <h2 class="name">Théo</h2>
@@ -165,9 +165,8 @@ h1 {
   color: black;
   img {
     position: absolute;
-    top: 15%;
-    width: 10vw;
-    height: 10vw;
+    top: 10%;
+    height: 50%;
   }
 
   h2 {
@@ -265,6 +264,27 @@ h1 {
   }
 }
 
+@media screen and (max-width: 780px) {
+  #container {
+    height: 300vh;
+  }
+  #profileContainer {
+    width: 90%;
+    height: 40vh;
+  }
+  #containerText {
+    width: 90%;
+    height: 60vh;
+  }
+
+  #containerSocial {
+    width: 90%;
+    height: 20vh;
+  }
+
+
+}
+
 @media screen and (max-width: 550px) {
   #container {
     height: 300vh;
@@ -277,13 +297,21 @@ h1 {
     width: 90%;
     height: 60vh;
   }
-  #tavernPole {
-    width: 30%;
-    top: 135vh;
-  }
   #containerSocial {
     width: 90%;
     height: 20vh;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #tavernPole {
+    opacity: 0;
+  }
+  .containerInfos {
+    margin-bottom: 170px;
+  }
+  #containerSocial {
+    margin-top: 80px;
   }
 }
 
@@ -294,6 +322,10 @@ h1 {
   #profileContainer {
     width: 90%;
     height: 40vh;
+  }
+
+  #tavernPole {
+    opacity: 0;
   }
 
   .profile {
@@ -334,7 +366,9 @@ h1 {
       left: 40%;
     }
   }
+  #containerSocial {
+    opacity: 0;
+  }
 }
-
 
 </style>
