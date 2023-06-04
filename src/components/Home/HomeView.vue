@@ -25,7 +25,7 @@
     </section>
     <section>
       <who-title infos="les meilleurs concours"></who-title>
-      <P>voici ci-dessous les 3 conocurs jugés les plus fiables</P>
+      <P>voici ci-dessous les 3 concours jugés les plus fiables</P>
       <div class="cardContainer">
         <div v-for="concours in descConcours" v-bind:key="concours.id">
           <ConcoursCard :concours=concours />
