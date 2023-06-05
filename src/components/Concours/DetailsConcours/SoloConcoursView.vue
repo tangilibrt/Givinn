@@ -400,6 +400,11 @@ h1 {
 }
 
 @media screen and (max-width: 470px) {
+  .containerDetail {
+    top: 50%;
+    overflow-y: visible;
+    height: 120%;
+  }
   .twelve {
     font-size: 20px;
     left: 40%;
