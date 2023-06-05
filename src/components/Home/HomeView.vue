@@ -66,6 +66,7 @@ export default {
     text-align: center;
     font-family: Inter, sans-serif;
     font-size: larger;
+    overflow: hidden;
 
       section {
         color: #17141d;
@@ -104,6 +105,15 @@ export default {
       justify-content: space-around;
       left: 50%;
       transform: translateX(-50%)scale(1.3);
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .container {
+      height: 220vh;
+      .cardContainer {
+        top: 50px;
+        transform: translateX(-50%)scale(0.6);
+      }
     }
   }
 </style>
