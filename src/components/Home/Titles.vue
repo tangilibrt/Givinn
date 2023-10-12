@@ -60,9 +60,13 @@ export default {
 
 @media screen and (max-width: 440px) {
   .containerInfos {
-    padding: 12px 60px;
-    min-width: 300px;
-    max-width: 400px;
+    padding: 12px 14px;
+    min-width: 200px;
+    max-width: 250px;
+  }
+
+  a {
+    font-size: 70px;
   }
 }
 </style>
