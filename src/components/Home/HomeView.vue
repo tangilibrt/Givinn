@@ -106,4 +106,5 @@ export default {
       transform: translateX(-50%)scale(1.3);
     }
   }
+
 </style>
